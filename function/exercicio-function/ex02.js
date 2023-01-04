@@ -8,15 +8,19 @@ triângulo).
 
 function triangulo(ladoA, ladoB, ladoC) {
 
-    if ((ladoA + ladoB > ladoC) || (ladoA + ladoC >ladoB ) || (ladoB + ladoC > ladoA)) {
-
-        if ((ladoA != ladoB != ladoC)) {
-            console.log('Isósceles')
-        }
+    if((ladoA + ladoB < ladoC) || (ladoC + ladoB < ladoA) || (ladoA + ladoC < ladoB) ) {
+        return 'Não compõe em um triângulo'
+    } else if (ladoA == ladoB && ladoB == ladoC){
+        return 'Equilátero'
+    } else if (ladoA == ladoB || ladoB == ladoC || ladoA == ladoC) {
+        return 'Isósceles'
     } else {
-        console.log("As medidas inseridas não correspondem ao triângulo") ;
+        return 'Escaleno'
     }
-
+      
 }
 
-triangulo(1,1,1)
+console.log(triangulo(1,2, 5))
+console.log(triangulo(15, 15, 15))
+console.log(triangulo(15, 10, 15))
+console.log(triangulo(15, 10, 5))
