@@ -1,10 +1,13 @@
+/*
+03) Crie uma função que recebe dois parâmetros, base e expoente, e retorne a base elevada ao expoente.
+*/
+
 function potencia(base, expoente) {
-    let result = base;
-    for (let cont = 0; cont < expoente; cont++) {
-        result = base*  base;
+    baseFixa = base;
+    for (let cont = 1; cont < expoente; cont++) {
+        base *=  baseFixa
     }
-    return result
+    return base;
 }
 
-console.log(potencia(2, 3))
-
+console.log(potencia(2,3))
