@@ -32,5 +32,13 @@ Object.defineProperty(pessoa, 'dataNasc', {
 });
 
 pessoa.dataNasc = '20/06/2001';
-console.log(pessoa.dataNasc)
-console.log(Object.keys(pessoa))
+console.log(pessoa.dataNasc);
+console.log(Object.keys(pessoa));
+
+// Object.assign (EcmaScript 2015)
+const dest = {a: 1};
+const o1 = {b : 2};
+const o2 = {c: 3, a:4};
+const obj = Object.assign(dest, o1, o2);
+
+console.log(obj);
