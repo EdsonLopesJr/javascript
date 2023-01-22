@@ -35,6 +35,7 @@ pessoa.dataNasc = '20/06/2001';
 console.log(pessoa.dataNasc);
 console.log(Object.keys(pessoa));
 
+console.log('----------------------------------------------------------');
 // Object.assign (EcmaScript 2015)
 const dest = {a: 1};
 const o1 = {b : 2};
